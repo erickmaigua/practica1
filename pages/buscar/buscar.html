@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar</title>
+</head>
+
+<body style="background-color: lightgray;">
+
+    <header style="background-color: lightblue; text-align: center;">
+
+        <h1 style="color: blue;">
+            Formulario de búsqueda
+        </h1>
+
+    </header>
+
+    <nav style="background-color: white;">
+
+        <a href="../../index.html" style="color: red;">
+            Inicio
+        </a>
+
+        <a href="../multimedia/multimedia.html" style="color: green;">
+            Multimedia
+        </a>
+
+        <a href="#intereses" style="color: purple;">
+            Intereses
+        </a>
+
+        <a href="../cto/contacto.html" style="color: brown;">
+            Contacto
+        </a>
+
+        <a href="buscar.html" style="color: orange;">
+            Buscar
+        </a>
+
+    </nav>
+
+    <main style="background-color: white;">
+
+        <section>
+
+            <h2 style="color: darkblue;">
+                Buscar información
+            </h2>
+
+            <p>
+                Este formulario utiliza el método GET para enviar información.
+            </p>
+
+            <form method="GET" action="buscar.html">
+
+                <label for="tema">
+                    Tema a buscar:
+                </label>
+
+                <br>
+
+                <input type="text"
+                    id="tema"
+                    name="tema"
+                    placeholder="Ejemplo: HTML"
+                    required>
+
+                <br><br>
+
+                <label for="categoria">
+                    Categoría:
+                </label>
+
+                <br>
+
+                <input type="text"
+                    id="categoria"
+                    name="categoria"
+                    placeholder="Ejemplo: multimedia">
+
+                <br><br>
+
+                <button type="submit"
+                    style="background-color: lightblue;">
+
+                    Buscar
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <article>
+
+            <h2 style="color: green;">
+                Explicación
+            </h2>
+
+            <p>
+                El formulario usa las etiquetas form, input, label y button.
+                El método GET muestra la información en la URL.
+            </p>
+
+        </article>
+
+    </main>
+
+    <footer style="background-color: lightblue; text-align: center;">
+
+        <p>
+            Creado por Erick Maigua Toro
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
