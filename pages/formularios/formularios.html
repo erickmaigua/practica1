@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial; margin: 0;">
+    <header style="background-color: lightblue; padding: 15px; text-align: center;">
+        <h1 style="color: darkblue; margin: 0;">Formularios</h1>
+    </header>
+
+    <nav style="background-color: white; padding: 10px; text-align: center;">
+        <a href="../../index.html" style="color: blue; margin-right: 15px; text-decoration: none;">Inicio</a>
+        <a href="formularios.html" style="color: green; margin-right: 15px; text-decoration: none;">Formularios</a>
+        <a href="../../pages/buscar/buscar.html" style="color: brown; text-decoration: none;">Buscar</a>
+    </nav>
+
+    <main style="background-color: white; padding: 15px; margin: 15px; border-radius: 10px;">
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: darkblue;">Formulario de Búsqueda</h2>
+            <form action="/pages/resultados/resultados.html" method="GET">
+                <label for="query">Buscar:</label><br>
+                <input type="text" id="query" name="query" placeholder="Ej. Programación" required minlength="3" maxlength="50" style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                <label for="categoria">Categoría:</label><br>
+                <select id="categoria" name="categoria" required style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="web">Web</option>
+                    <option value="robotica">Robótica</option>
+                    <option value="diseno">Diseño</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                </select>
+                <button type="submit" style="background-color: lightblue; color: darkblue; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer;">Buscar</button>
+            </form>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: darkgreen;">Formulario de Registro</h2>
+            <form action="/pages/resultados/resultados.html" method="GET">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Erick Maigua" required minlength="3" maxlength="60" style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                <fieldset >
+                    <legend style="font-weight: bold;">Intereses</legend>
+                    <label style="display: block; margin-bottom: 6px;"><input type="checkbox" name="intereses[]" value="java"> Java</label>
+                    <label style="display: block; margin-bottom: 6px;"><input type="checkbox" name="intereses[]" value="python"> Python</label>
+                    <label style="display: block; margin-bottom: 6px;"><input type="checkbox" name="intereses[]" value="web"> Desarrollo Web</label>
+                    <label style="display: block; margin-bottom: 6px;"><input type="checkbox" name="intereses[]" value="robotica"> Robótica</label>
+                </fieldset>
+                <button type="submit" style="background-color: lightblue; color: darkblue; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer;">Registrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 style="color: purple;">Formulario de Login</h2>
+            <form action="/pages/resultados/resultados.html" method="GET">
+                <label for="email">Correo:</label><br>
+                <input type="email" id="email" name="email" placeholder="Ej. correo@ejemplo.com" required minlength="6" maxlength="60" style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" name="password" placeholder="Ej. Pass@1234" required minlength="8" maxlength="16" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}" title="La contraseña debe tener entre 8 y 16 caracteres, incluir letras, números y al menos un carácter especial (@$!%*?&.#_-)." style="width: 100%; padding: 8px; margin-top: 6px; margin-bottom: 12px; border: 1px solid #bbb; border-radius: 6px;">
+                <button type="submit" style="background-color: lightblue; color: darkblue; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer;">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="background-color: lightblue; text-align: center; padding: 15px;">
+        <p>Creado por Erick Maigua Toro.</p>
+
+        <p>Clase de Fundamentos Web - HTML Semántico</p>
+    </footer>
+</body>
+</html>

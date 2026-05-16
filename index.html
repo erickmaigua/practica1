@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -24,7 +24,9 @@
 
             <a href="pages/contacto/contacto.html" style="color: red;">Contacto</a> |
 
-            <a href="pages/buscar/buscar.html" style="color: brown;">Buscar</a>
+            <a href="pages/buscar/buscar.html" style="color: brown;">Buscar</a> |
+
+            <a href="pages/formularios/formularios.html" style="color: teal;">Formularios</a>
 
         </nav>
 
@@ -340,7 +342,7 @@
     <section class="formulario" style="background-color: white; padding: 15px; margin: 15px; border-radius: 10px;">
         <form>
             <label for="codigo">Codigo (3 letras y 2 números):</label>
-            <input type="text" id="codigo" name="codigo" pattern="[A-Za-z]{3}[0-9]{2}" 
+            <input type="text" id="codigo" name="codigo" pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&._-])[A-Za-z\d@$!%?&._-]{8,15}$"  
             title="Ingrese 3 letras seguidas de 2 números" required>
             <br><br>
             <button type="submit">Enviar</button>
